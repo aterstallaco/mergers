@@ -1,231 +1,807 @@
-# Media Industry Mergers & Acquisitions
-## Status as of January 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Industry Mergers & Acquisitions - 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
----
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
 
-## Table of Contents
-- [1. Netflix Acquiring Warner Bros.](#1-netflix-acquiring-warner-bros-from-wbd)
-- [2. Paramount + Skydance Merger](#2-paramount--skydance-merger)
-- [3. HBO Max European Expansion](#3-hbo-max-european-expansion)
-- [4. Disney+ / Hulu Consolidation](#4-disney--hulu-consolidation)
-- [Timeline Summary](#timeline-summary)
-- [What This Means for Documentary Filmmakers](#what-this-means-for-documentary-filmmakers)
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
----
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-## 1. Netflix Acquiring Warner Bros. (from WBD)
+        h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
 
-| Field | Details |
-|-------|---------|
-| **Status** | ✅ APPROVED BY WBD BOARD (Pending regulatory approval & shareholder vote) |
-| **Deal Value** | $82.7 billion enterprise value ($72 billion equity) |
-| **Announced** | December 5, 2025 |
-| **Expected Close** | Late 2026 / Early 2027 (after Discovery Global spin-off in Q3 2026) |
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
 
-### What Netflix Gets:
-- Warner Bros. Pictures & Television Studios
-- HBO and HBO Max streaming service
-- DC Studios and DC Entertainment
-- Gaming division
-- Entire WBD media library (Game of Thrones, Harry Potter, etc.)
+        .last-updated {
+            font-size: 0.9rem;
+            color: #888;
+            font-style: italic;
+        }
 
-### What Stays Separate (Discovery Global spin-off):
-- CNN
-- Discovery Channel, HGTV, Food Network, TLC
-- TNT Sports
-- Discovery+ and Bleacher Report
-- European free-to-air channels
+        /* Navigation */
+        nav {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
 
-> ⚠️ **Key Note:** Paramount Skydance launched a hostile $108B counter-bid for ALL of WBD, but the WBD board rejected it on January 7, 2026, calling it "insufficient value."
+        nav h3 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
----
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-## 2. Paramount + Skydance Merger
+        nav a {
+            color: #64b5f6;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(100, 181, 246, 0.1);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
 
-| Field | Details |
-|-------|---------|
-| **Status** | ✅ COMPLETED (Closed August 7, 2025) |
-| **Deal Value** | $8 billion all-stock merger |
-| **New Company** | Paramount Skydance Corporation (Nasdaq: PSKY) |
-| **Leadership** | David Ellison (Chairman & CEO), Jeff Shell (President) |
+        nav a:hover {
+            background: rgba(100, 181, 246, 0.3);
+            transform: translateY(-2px);
+        }
 
-### Combined Company Includes:
-- Paramount Pictures
-- CBS (broadcast network + CBS News)
-- Showtime
-- MTV, Nickelodeon, BET, Comedy Central
-- Paramount+ and Pluto TV
-- Skydance Film, TV, Animation, Gaming divisions
+        /* Deal Cards */
+        .deal-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-### Key Changes:
-- Showtime/MTV Entertainment Studios merged into revived **Paramount Television Studios**
-- $2 billion in planned cost savings (cuts expected)
-- Focus shifting to franchises (Top Gun, Star Trek), sports, gaming, animation
-- Streaming films "not a priority" per Ellison
+        .deal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
 
-> ⚠️ **Impact on Documentaries:** MTV Documentary Films is now in flux. Expect the label to be "quiet" while the Ellison regime restructures priorities.
+        .deal-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
 
----
+        .deal-number {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+        }
 
-## 3. HBO Max European Expansion
+        .deal-title {
+            font-size: 1.5rem;
+            color: #fff;
+            flex: 1;
+        }
 
-| Field | Details |
-|-------|---------|
-| **Status** | 🔄 IN PROGRESS (Rolling launches through March 2026) |
-| **Germany, Italy, Austria, Switzerland** | Launched January 13, 2026 |
-| **UK & Ireland** | Launching March 2026 |
+        .status-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-### UK/Ireland Details:
-- Sky customers get ad-supported HBO Max at no extra cost
-- Also available direct-to-consumer and through other partnerships
-- Completes HBO Max's European rollout
+        .status-approved {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: #fff;
+        }
 
-> 💡 **Opportunity:** HBO Max will be seeking local content for its Ireland launch. This is a window for Irish-focused documentaries before Netflix absorbs HBO Max (late 2026/2027).
+        .status-completed {
+            background: linear-gradient(135deg, #1565c0, #0d47a1);
+            color: #fff;
+        }
 
----
+        .status-progress {
+            background: linear-gradient(135deg, #f57c00, #e65100);
+            color: #fff;
+        }
 
-## 4. Disney+ / Hulu Consolidation
+        /* Deal colors */
+        .deal-netflix .deal-number { background: linear-gradient(135deg, #e50914, #b20710); }
+        .deal-paramount .deal-number { background: linear-gradient(135deg, #1565c0, #0d47a1); }
+        .deal-hbo .deal-number { background: linear-gradient(135deg, #7b1fa2, #4a148c); }
+        .deal-disney .deal-number { background: linear-gradient(135deg, #e65100, #bf360c); }
 
-| Field | Details |
-|-------|---------|
-| **Status** | 🔄 IN PROGRESS (Hulu app phasing out in 2026) |
-| **What's Happening** | Hulu content integrating fully into Disney+; Hulu app being retired |
+        /* Info Table */
+        .info-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
 
-Disney now owns 100% of Hulu (after buying out Comcast's stake). The separate Hulu app will be phased out, with all content moving to Disney+.
+        .info-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
 
----
+        .info-table td:first-child {
+            font-weight: 600;
+            color: #90caf9;
+            width: 200px;
+        }
 
-## Timeline Summary
+        /* Lists */
+        .detail-section {
+            margin: 25px 0;
+        }
 
-| Date | Event |
-|------|-------|
-| **Aug 7, 2025** | Paramount + Skydance merger closes; David Ellison takes control |
-| **Dec 5, 2025** | Netflix announces deal to acquire Warner Bros./HBO from WBD |
-| **Dec 8, 2025** | Paramount Skydance launches hostile $108B counter-bid for ALL of WBD |
-| **Jan 7, 2026** | WBD board rejects Paramount Skydance offer; reaffirms Netflix deal |
-| **Jan 13, 2026** | HBO Max launches in Germany, Italy, Austria, Switzerland |
-| **Mar 2026** | HBO Max launches in UK & Ireland |
-| **Q3 2026** | Discovery Global spins off from WBD as separate public company |
-| **Late 2026 / Early 2027** | Netflix acquisition of Warner Bros./HBO expected to close |
+        .detail-section h4 {
+            color: #90caf9;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
 
----
+        .detail-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
 
-## Visual Overview
+        .detail-section li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                        MEDIA LANDSCAPE - JANUARY 2026                        │
-└─────────────────────────────────────────────────────────────────────────────┘
+        .detail-section li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #64b5f6;
+        }
 
-┌─────────────────────┐         ┌─────────────────────┐
-│      NETFLIX        │         │  WARNER BROS.       │
-│                     │ ◄─────  │  DISCOVERY          │
-│  • Netflix Original │  $82.7B │                     │
-│  • (Soon: HBO,      │  DEAL   │  Splitting into:    │
-│    Warner Bros.)    │         │                     │
-└─────────────────────┘         │  ┌───────────────┐  │
-                                │  │ Warner Bros.  │  │ ──► To Netflix
-                                │  │ HBO / HBO Max │  │
-                                │  │ DC Studios    │  │
-                                │  └───────────────┘  │
-                                │                     │
-                                │  ┌───────────────┐  │
-                                │  │Discovery Global│ │ ──► Separate Company
-                                │  │ CNN, Discovery│  │     (Q3 2026)
-                                │  │ HGTV, TLC     │  │
-                                │  └───────────────┘  │
-                                └─────────────────────┘
+        /* Alert boxes */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
 
-┌─────────────────────┐
-│ PARAMOUNT SKYDANCE  │  ◄─── COMPLETED Aug 2025
-│ (Nasdaq: PSKY)      │
-│                     │
-│ • Paramount Pictures│
-│ • CBS / CBS News    │
-│ • Showtime          │
-│ • MTV, Nickelodeon  │
-│ • Paramount+        │
-│ • Skydance studios  │
-│                     │
-│ CEO: David Ellison  │
-└─────────────────────┘
-        │
-        │ HOSTILE BID
-        │ $108B (REJECTED)
-        ▼
-┌─────────────────────┐
-│  Attempted to buy   │
-│  ALL of WBD but     │
-│  board said NO      │
-│  (Jan 7, 2026)      │
-└─────────────────────┘
+        .alert-warning {
+            background: rgba(255, 152, 0, 0.15);
+            border-left: 4px solid #ff9800;
+        }
 
+        .alert-success {
+            background: rgba(76, 175, 80, 0.15);
+            border-left: 4px solid #4caf50;
+        }
 
-┌─────────────────────┐         ┌─────────────────────┐
-│      DISNEY+        │ ◄─────  │       HULU          │
-│                     │  MERGE  │                     │
-│  • Disney content   │         │  App phasing out    │
-│  • Marvel, Star Wars│         │  in 2026            │
-│  • (Soon: all Hulu) │         │                     │
-└─────────────────────┘         └─────────────────────┘
+        .alert-danger {
+            background: rgba(244, 67, 54, 0.15);
+            border-left: 4px solid #f44336;
+        }
 
+        .alert-icon {
+            font-size: 1.3rem;
+        }
 
-┌─────────────────────┐         ┌─────────────────────┐
-│    APPLE TV+        │         │  AMAZON PRIME VIDEO │
-│                     │         │                     │
-│  Independent        │         │  Independent        │
-│  (No major mergers) │         │  (No major mergers) │
-└─────────────────────┘         └─────────────────────┘
-```
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 30px 0;
+        }
 
----
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #64b5f6, #7b1fa2, #4caf50);
+            border-radius: 3px;
+        }
 
-## What This Means for Documentary Filmmakers
+        .timeline-item {
+            position: relative;
+            padding: 15px 0 15px 25px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
 
-### Shrinking Buyers:
-- HBO Max will eventually be absorbed into Netflix (one less independent buyer)
-- MTV Documentary Films in restructuring limbo under Ellison regime
-- Paramount priorities shifting away from streaming films
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 20px;
+            width: 14px;
+            height: 14px;
+            background: #64b5f6;
+            border-radius: 50%;
+            border: 3px solid #1a1a2e;
+        }
 
-### Windows of Opportunity:
-- **HBO Max Ireland launch (March 2026)** creates demand for local content
-- Netflix becoming even more dominant = potentially more commissioning budget
-- Apple TV+, Amazon Prime Video remain independent alternatives
-- BBC/PBS co-productions still a strong path for UK/Ireland content
+        .timeline-item.completed::before {
+            background: #4caf50;
+        }
 
----
+        .timeline-item.current::before {
+            background: #ff9800;
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+        }
 
-## Key Contacts & Resources
+        .timeline-date {
+            font-weight: 600;
+            color: #90caf9;
+            margin-bottom: 5px;
+        }
 
-### HBO Max (Pre-Netflix Acquisition)
-- Launching in Ireland: March 2026
-- Distribution partner: Sky Ireland
-- Look for commissioning announcements in Q1 2026
+        .timeline-event {
+            color: #e0e0e0;
+        }
 
-### Netflix
-- Documentary division actively acquiring
-- Will inherit HBO Documentary Films post-merger
+        /* Visual Diagram */
+        .diagram-section {
+            background: rgba(0,0,0,0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px 0;
+            overflow-x: auto;
+        }
 
-### BBC / PBS Co-Productions
-- Strong track record with Northern Ireland content
-- Recent example: *Once Upon a Time in Northern Ireland* (BBC Two + PBS)
-- Northern Ireland Screen offers funding support
+        .diagram-section h2 {
+            color: #fff;
+            margin-bottom: 25px;
+            text-align: center;
+        }
 
-### Apple TV+
-- Continuing to commission music documentaries
-- Recent: *Bono: Stories of Surrender* (2025)
+        .diagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
----
+        .company-box {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
 
-## Sources
+        .company-box:hover {
+            transform: scale(1.02);
+        }
 
-- Netflix/WBD merger announcement: December 5, 2025
-- Paramount Skydance merger close: August 7, 2025
-- HBO Max Europe launches: WBD press releases, December 2025
-- Industry analysis: Variety, Deadline, Hollywood Reporter, Screen Daily
+        .company-box.netflix {
+            border-color: #e50914;
+        }
 
----
+        .company-box.paramount {
+            border-color: #1565c0;
+        }
 
-*Document prepared January 22, 2026*
+        .company-box.disney {
+            border-color: #e65100;
+        }
 
-*For updates and corrections, please submit a pull request.*
+        .company-box.independent {
+            border-color: #4caf50;
+        }
+
+        .company-box.merging {
+            border-color: #7b1fa2;
+            border-style: dashed;
+        }
+
+        .company-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .company-status {
+            font-size: 0.8rem;
+            color: #a0a0a0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .company-assets {
+            font-size: 0.9rem;
+            color: #bbb;
+            text-align: left;
+        }
+
+        .company-assets li {
+            padding: 4px 0;
+        }
+
+        .merge-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #64b5f6;
+            padding: 10px;
+        }
+
+        /* Implications Section */
+        .implications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .implication-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .implication-card h4 {
+            color: #fff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .implication-card.negative h4 {
+            color: #ef5350;
+        }
+
+        .implication-card.positive h4 {
+            color: #66bb6a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .deal-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-table td:first-child {
+                width: 120px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📺 Media Industry Mergers & Acquisitions</h1>
+            <p class="subtitle">A guide to understanding who owns what in entertainment</p>
+            <p class="last-updated">Last Updated: January 22, 2026</p>
+        </header>
+
+        <nav>
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#netflix-wbd">Netflix + Warner Bros.</a></li>
+                <li><a href="#paramount-skydance">Paramount + Skydance</a></li>
+                <li><a href="#hbo-europe">HBO Max Europe</a></li>
+                <li><a href="#disney-hulu">Disney+ / Hulu</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#diagram">Visual Overview</a></li>
+                <li><a href="#implications">For Filmmakers</a></li>
+            </ul>
+        </nav>
+
+        <!-- Deal 1: Netflix + WBD -->
+        <section id="netflix-wbd" class="deal-card deal-netflix">
+            <div class="deal-header">
+                <div class="deal-number">1</div>
+                <h2 class="deal-title">Netflix Acquiring Warner Bros.</h2>
+                <span class="status-badge status-approved">✓ Board Approved</span>
+            </div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Deal Value</td>
+                    <td>$82.7 billion enterprise value ($72 billion equity)</td>
+                </tr>
+                <tr>
+                    <td>Announced</td>
+                    <td>December 5, 2025</td>
+                </tr>
+                <tr>
+                    <td>Expected Close</td>
+                    <td>Late 2026 / Early 2027</td>
+                </tr>
+                <tr>
+                    <td>Condition</td>
+                    <td>After Discovery Global spin-off (Q3 2026)</td>
+                </tr>
+            </table>
+
+            <div class="detail-section">
+                <h4>What Netflix Gets:</h4>
+                <ul>
+                    <li>Warner Bros. Pictures & Television Studios</li>
+                    <li>HBO and HBO Max streaming service</li>
+                    <li>DC Studios and DC Entertainment</li>
+                    <li>Gaming division</li>
+                    <li>Entire WBD media library (Game of Thrones, Harry Potter, etc.)</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h4>What Stays Separate (Discovery Global spin-off):</h4>
+                <ul>
+                    <li>CNN</li>
+                    <li>Discovery Channel, HGTV, Food Network, TLC</li>
+                    <li>TNT Sports</li>
+                    <li>Discovery+ and Bleacher Report</li>
+                    <li>European free-to-air channels</li>
+                </ul>
+            </div>
+
+            <div class="alert alert-warning">
+                <span class="alert-icon">⚠️</span>
+                <div>
+                    <strong>Hostile Counter-Bid:</strong> Paramount Skydance launched a $108B counter-bid for ALL of WBD, backed by Larry Ellison's personal guarantee of $40.4 billion. The WBD board rejected it on January 7, 2026, calling it "insufficient value."
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal 2: Paramount + Skydance -->
+        <section id="paramount-skydance" class="deal-card deal-paramount">
+            <div class="deal-header">
+                <div class="deal-number">2</div>
+                <h2 class="deal-title">Paramount + Skydance Merger</h2>
+                <span class="status-badge status-completed">✓ Completed</span>
+            </div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Status</td>
+                    <td>Closed August 7, 2025</td>
+                </tr>
+                <tr>
+                    <td>Deal Value</td>
+                    <td>$8 billion all-stock merger</td>
+                </tr>
+                <tr>
+                    <td>New Company</td>
+                    <td>Paramount Skydance Corporation (Nasdaq: PSKY)</td>
+                </tr>
+                <tr>
+                    <td>Leadership</td>
+                    <td>David Ellison (Chairman & CEO), Jeff Shell (President)</td>
+                </tr>
+            </table>
+
+            <div class="detail-section">
+                <h4>Combined Company Includes:</h4>
+                <ul>
+                    <li>Paramount Pictures</li>
+                    <li>CBS (broadcast network + CBS News)</li>
+                    <li>Showtime</li>
+                    <li>MTV, Nickelodeon, BET, Comedy Central</li>
+                    <li>Paramount+ and Pluto TV</li>
+                    <li>Skydance Film, TV, Animation, Gaming divisions</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h4>Key Changes Under Ellison:</h4>
+                <ul>
+                    <li>Showtime/MTV Entertainment Studios → Paramount Television Studios</li>
+                    <li>$2 billion in planned cost savings (cuts expected)</li>
+                    <li>Focus: franchises (Top Gun, Star Trek), sports, gaming, animation</li>
+                    <li>Streaming films "not a priority" per Ellison</li>
+                </ul>
+            </div>
+
+            <div class="alert alert-danger">
+                <span class="alert-icon">🎬</span>
+                <div>
+                    <strong>Impact on Documentaries:</strong> MTV Documentary Films is now in flux. The label will likely be "quiet" while the Ellison regime restructures priorities. Not a good time to pitch.
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal 3: HBO Max Europe -->
+        <section id="hbo-europe" class="deal-card deal-hbo">
+            <div class="deal-header">
+                <div class="deal-number">3</div>
+                <h2 class="deal-title">HBO Max European Expansion</h2>
+                <span class="status-badge status-progress">In Progress</span>
+            </div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Germany, Italy, Austria, Switzerland</td>
+                    <td>✓ Launched January 13, 2026</td>
+                </tr>
+                <tr>
+                    <td>UK & Ireland</td>
+                    <td>🗓️ Launching March 2026</td>
+                </tr>
+            </table>
+
+            <div class="detail-section">
+                <h4>UK/Ireland Launch Details:</h4>
+                <ul>
+                    <li>Sky customers get ad-supported HBO Max at no extra cost</li>
+                    <li>Also available direct-to-consumer</li>
+                    <li>Third-party distribution partnerships in development</li>
+                    <li>Completes HBO Max's European rollout</li>
+                </ul>
+            </div>
+
+            <div class="alert alert-success">
+                <span class="alert-icon">💡</span>
+                <div>
+                    <strong>Opportunity Window:</strong> HBO Max will be seeking local content for its Ireland launch. This is a prime window for Irish-focused documentaries BEFORE Netflix absorbs HBO Max in late 2026/2027.
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal 4: Disney + Hulu -->
+        <section id="disney-hulu" class="deal-card deal-disney">
+            <div class="deal-header">
+                <div class="deal-number">4</div>
+                <h2 class="deal-title">Disney+ / Hulu Consolidation</h2>
+                <span class="status-badge status-progress">In Progress</span>
+            </div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Status</td>
+                    <td>Hulu app phasing out in 2026</td>
+                </tr>
+                <tr>
+                    <td>What's Happening</td>
+                    <td>All Hulu content integrating into Disney+</td>
+                </tr>
+            </table>
+
+            <p style="margin-top: 20px; color: #bbb;">
+                Disney now owns 100% of Hulu after buying out Comcast's stake. The separate Hulu app will be retired, with all content moving to Disney+. This follows the pattern of Hulu replacing Star in international markets.
+            </p>
+        </section>
+
+        <!-- Timeline -->
+        <section id="timeline" class="deal-card">
+            <h2 style="color: #fff; margin-bottom: 25px;">📅 Timeline of Events</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-date">August 7, 2025</div>
+                    <div class="timeline-event">Paramount + Skydance merger closes; David Ellison takes control</div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-date">December 5, 2025</div>
+                    <div class="timeline-event">Netflix announces deal to acquire Warner Bros./HBO from WBD</div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-date">December 8, 2025</div>
+                    <div class="timeline-event">Paramount Skydance launches hostile $108B counter-bid for ALL of WBD</div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-date">January 7, 2026</div>
+                    <div class="timeline-event">WBD board rejects Paramount Skydance offer; reaffirms Netflix deal</div>
+                </div>
+                <div class="timeline-item completed">
+                    <div class="timeline-date">January 13, 2026</div>
+                    <div class="timeline-event">HBO Max launches in Germany, Italy, Austria, Switzerland</div>
+                </div>
+                <div class="timeline-item current">
+                    <div class="timeline-date">March 2026</div>
+                    <div class="timeline-event">HBO Max launches in UK & Ireland</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q3 2026</div>
+                    <div class="timeline-event">Discovery Global spins off from WBD as separate public company</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Late 2026 / Early 2027</div>
+                    <div class="timeline-event">Netflix acquisition of Warner Bros./HBO expected to close</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Diagram -->
+        <section id="diagram" class="diagram-section">
+            <h2>🗺️ Visual Overview: Who Owns What</h2>
+            
+            <div class="diagram-grid">
+                <div class="company-box netflix">
+                    <div class="company-name">NETFLIX</div>
+                    <div class="company-status">Growing via Acquisition</div>
+                    <ul class="company-assets">
+                        <li>Netflix Originals</li>
+                        <li>🔜 HBO & HBO Max</li>
+                        <li>🔜 Warner Bros. Studios</li>
+                        <li>🔜 DC Entertainment</li>
+                        <li>🔜 WBD Library</li>
+                    </ul>
+                </div>
+
+                <div class="company-box merging">
+                    <div class="company-name">WARNER BROS. DISCOVERY</div>
+                    <div class="company-status">Splitting Up</div>
+                    <ul class="company-assets">
+                        <li>➡️ Warner Bros. → Netflix</li>
+                        <li>➡️ HBO/HBO Max → Netflix</li>
+                        <li>➡️ DC Studios → Netflix</li>
+                        <li>⬇️ CNN → Discovery Global</li>
+                        <li>⬇️ Discovery/HGTV → Discovery Global</li>
+                    </ul>
+                </div>
+
+                <div class="company-box paramount">
+                    <div class="company-name">PARAMOUNT SKYDANCE</div>
+                    <div class="company-status">Merged (Aug 2025)</div>
+                    <ul class="company-assets">
+                        <li>Paramount Pictures</li>
+                        <li>CBS & CBS News</li>
+                        <li>Showtime</li>
+                        <li>MTV, Nickelodeon, BET</li>
+                        <li>Paramount+ & Pluto TV</li>
+                        <li>Skydance Studios</li>
+                    </ul>
+                </div>
+
+                <div class="company-box disney">
+                    <div class="company-name">DISNEY</div>
+                    <div class="company-status">Consolidating Streaming</div>
+                    <ul class="company-assets">
+                        <li>Disney+</li>
+                        <li>Hulu (merging in)</li>
+                        <li>ESPN+</li>
+                        <li>Marvel Studios</li>
+                        <li>Lucasfilm (Star Wars)</li>
+                        <li>Pixar, 20th Century</li>
+                    </ul>
+                </div>
+
+                <div class="company-box independent">
+                    <div class="company-name">APPLE TV+</div>
+                    <div class="company-status">Independent</div>
+                    <ul class="company-assets">
+                        <li>Apple Originals</li>
+                        <li>Music Documentaries</li>
+                        <li>Prestige Focus</li>
+                        <li>No major mergers</li>
+                    </ul>
+                </div>
+
+                <div class="company-box independent">
+                    <div class="company-name">AMAZON PRIME VIDEO</div>
+                    <div class="company-status">Independent</div>
+                    <ul class="company-assets">
+                        <li>Amazon Originals</li>
+                        <li>MGM Library</li>
+                        <li>Global Reach</li>
+                        <li>No major mergers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implications for Filmmakers -->
+        <section id="implications" class="deal-card">
+            <h2 style="color: #fff; margin-bottom: 25px;">🎬 What This Means for Documentary Filmmakers</h2>
+            
+            <div class="implications">
+                <div class="implication-card negative">
+                    <h4>📉 Shrinking Buyers</h4>
+                    <ul>
+                        <li>HBO Max will be absorbed into Netflix (one less independent buyer)</li>
+                        <li>MTV Documentary Films in restructuring limbo</li>
+                        <li>Paramount priorities shifting away from streaming films</li>
+                        <li>Overall consolidation = fewer decision-makers</li>
+                    </ul>
+                </div>
+
+                <div class="implication-card positive">
+                    <h4>📈 Windows of Opportunity</h4>
+                    <ul>
+                        <li><strong>HBO Max Ireland (March 2026)</strong> — demand for local content</li>
+                        <li>Netflix becoming dominant = bigger commissioning budget</li>
+                        <li>Apple TV+ & Amazon remain independent alternatives</li>
+                        <li>BBC/PBS co-productions strong for UK/Ireland content</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="alert alert-success" style="margin-top: 30px;">
+                <span class="alert-icon">🎯</span>
+                <div>
+                    <strong>Best Strategy Right Now:</strong> If you have an Irish-focused documentary, pitch to HBO Max BEFORE the March 2026 Ireland launch. They'll be actively seeking local content to establish the brand. After Netflix absorbs them (late 2026/2027), you'll be competing in a much larger pool.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Document prepared January 22, 2026</p>
+            <p style="margin-top: 10px;">For updates and corrections, <a href="#">submit a pull request on GitHub</a></p>
+            <p style="margin-top: 20px; font-size: 0.8rem;">
+                Sources: Netflix/WBD press releases, Variety, Deadline, Hollywood Reporter, Screen Daily
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
